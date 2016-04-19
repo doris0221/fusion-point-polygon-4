@@ -1,8 +1,8 @@
-fusion-point-polygon-2
+fusion-point-polygon-4
 ========================
 
 ## Demo
-http://doris0221.github.io/fusion-point-polygon-2/index.html
+http://doris0221.github.io/fusion-point-polygon-4/index.html
 
 Use this template if you wish to create a Search-and-Filter map that turns on/off at least 2 layers (points and polygons), and draws data from Google Fusion Tables. Point map can be filtered with textual or numeric values.
 
