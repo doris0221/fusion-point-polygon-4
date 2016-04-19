@@ -26,7 +26,7 @@ var MapsLib = {
 
   //MODIFY the encrypted Table IDs of your Fusion Tables (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1QDfxLcf7cSYMU98yG6Cyuhqtj8sOziTwVNHUIjme", //Point data layer
+  fusionTableId:      "1BNNaJfgAkQmf8SPfpVhaKbOXbXxXfbjq6Wqe21ju", //Point data layer
 
   polygon1TableID:    "1B_h8fr9hD2N4U0zGWqwToWO1mcPgFvtvVLlakkRE", // Hartford neighborhood outlines
 
