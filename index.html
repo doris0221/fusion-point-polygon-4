@@ -39,7 +39,7 @@
       <div class='row'>
         <div class='col-md-4'>
         <!--MODIFY or erase any descriptive text or links below between the paragraph <p> tags -->
-          <p>View <a href="https://github.com/JackDougherty/fusion-point-polygon">code on GitHub</a><br>Based on <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a><br>Draws data from <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595' target='_blank'>Google Fusion Tables</a></p>
+          <p>Search for gardens that are located nearby by typing in an address.</a><br>Look for greenhouse or plots availability by clicking the checkbox.</a></p>
           <div class='well'>
             <h4>
               Address <small>(<a id='find_me' href='#'>find me</a>)</small>
@@ -60,22 +60,32 @@
               </label>
             </p>
             <!-- Edit to change title and filter tools for point layer. Also add filter to maps_lib.js -->
-            <h4>
-              What are you looking for?
-            </h4>
             <ul class='inputs-list unstyled'>
               <li>
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType1' />
-                  <span class='filter-box filter-blue'></span>
-                  Greenhouse Available
+                  <span class='filter-box filter-yellow'></span>
+                  Gardens
+                </label>
+              </li>
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType2' />
+                  <span class='filter-box filter-green'></span>
+                  with greenhouse on site
                 </label>
               </li>
               <li>
                 <label class='checkbox inline'>
-                  <input type='checkbox' id='cbType2' />
-                  <span class='filter-box filter-green'></span>
-                  Plots Available
+                  <input type='checkbox' id='cbType3' />
+                  <span class='filter-box filter-purple'></span>
+                  with plots available
+                </label>
+              </li>
+               <li>
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType4' />
+                  <span class='filter-box filter-blue'></span>
+                  with greenhouse on site and plots available
                 </label>
               </li>
             <!--MODIFY Polygon layers legend heading, labels (such as Polygon layer 1) to match your data, and related variables in maps_lib.js file -->
@@ -83,21 +93,10 @@
               <li>
                 <label class='radio inline'>
                   <input type='radio' name='types' id='rbPolygon1' checked />
-                  Polygon layer 1
+                  Hartford Neighborhood Border
                 </label>
               </li>
               <li>
-                <label class='radio inline'>
-                  <input type='radio' name='types' id='rbPolygon2' />
-                  Polygon layer 2
-                </label>
-              </li>
-              <li>
-                <label class='radio inline'>
-                  <input type='radio' name='types' id='rbPolygon0' />
-                  Off
-                </label>
-              </li>
             </ul>
             <br />
             <a class='btn btn-primary' id='search' href='#'>

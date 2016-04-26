@@ -26,7 +26,7 @@ var MapsLib = {
 
   //MODIFY the encrypted Table IDs of your Fusion Tables (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1QDfxLcf7cSYMU98yG6Cyuhqtj8sOziTwVNHUIjme", //Point data layer
+  fusionTableId:      "1BNNaJfgAkQmf8SPfpVhaKbOXbXxXfbjq6Wqe21ju", //Point data layer
 
   polygon1TableID:    "1B_h8fr9hD2N4U0zGWqwToWO1mcPgFvtvVLlakkRE", // Hartford neighborhood outlines
 
@@ -137,13 +137,12 @@ var MapsLib = {
     //---MODIFY column header and values below to match your Google Fusion Table AND index.html
     //-- NUMERICAL OPTION - to display and filter a column of numerical data in your table, use this instead
 
-    var type_column = "'TypeNum'";
+    var type_column = "TypeNum";
     var searchType = type_column + " IN (-1,";
     if ( $("#cbType1").is(':checked')) searchType += "1,";
     if ( $("#cbType2").is(':checked')) searchType += "2,";
     if ( $("#cbType3").is(':checked')) searchType += "3,";
     if ( $("#cbType4").is(':checked')) searchType += "4,";
-    if ( $("#cbType5").is(':checked')) searchType += "5,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
 
 
