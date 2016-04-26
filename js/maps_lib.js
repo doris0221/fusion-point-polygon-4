@@ -137,7 +137,7 @@ var MapsLib = {
     //---MODIFY column header and values below to match your Google Fusion Table AND index.html
     //-- NUMERICAL OPTION - to display and filter a column of numerical data in your table, use this instead
 
-    var type_column = "'TypeNum'";
+    var type_column = "TypeNum";
     var searchType = type_column + " IN (-1,";
     if ( $("#cbType1").is(':checked')) searchType += "1,";
     if ( $("#cbType2").is(':checked')) searchType += "2,";
